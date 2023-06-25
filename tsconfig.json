@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es5",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "lib": [ "es2016", "dom" ],
+    "allowJs": true,
+    "jsx": "react",
+    "strict": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "inlineSourceMap": true,
+    "downlevelIteration": true
+  },
+
+  "include": [
+    "src",
+    "src/index.d.ts",
+  ]
+}

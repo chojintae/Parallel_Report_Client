@@ -1,0 +1,43 @@
+.above_banner {
+  background-color: #CFC500;
+}
+
+.above_banner_a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #918F50;
+
+  margin-left: 35px;
+}
+
+.above_banner_b {
+  font-family: Arial, Sans-Serif;
+  float: left;
+  font-size: 19px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #918F50;
+  text-align: center;
+  width: 65px; /* Adjust the width value as needed */
+  padding: 3px; /* Adjust the padding value as needed */
+}
+
+.above_banner_b a {
+  color: #4C4E4D;
+  text-align: center; /* Align the text to the left */
+  text-decoration: none;
+}
+
+.above_banner_c {
+  float: right;
+  font-family: Arial, Sans-Serif;
+  color: #4C4E4D;
+  font-size: 15px;
+  padding-top: 6px;
+  padding-right: 35px;
+}

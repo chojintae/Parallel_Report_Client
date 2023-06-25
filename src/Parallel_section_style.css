@@ -1,0 +1,267 @@
+.parallel_section {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    flex-direction: column; /* Display the sections in a column layout */
+    justify-content: flex-start; /* Align sections to the top */
+    align-items: stretch; /* Stretch sections to occupy full width */
+  
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #918F50;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #918F50;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #918F50;
+  
+    margin-left: 35px;
+    margin-right: 35px;
+
+    padding-top: 5px;
+    position: relative; /* Set the parent container to a relative position */
+}
+
+.above_split::before,
+.above_split::after {
+  content: ""; /* Add content to the pseudo-element */
+  position: absolute; /* Set the pseudo-element to an absolute position */
+  top: 50%; /* Position the pseudo-element vertically in the middle */
+  left: 0; /* Position the pseudo-element at the left edge */
+  right: 0; /* Position the pseudo-element at the right edge */
+  height: 1px; /* Set the height of the line */
+  background-color: #b5b134; /* Set the color of the line */
+  z-index: -1; /* Move the line behind the text */
+}
+
+.above_split::before {
+  left: 0;
+  right: calc(58%); /* Adjust the value to prevent crossing */
+}
+
+.above_split::after {
+  left: calc(58%); /* Adjust the value to prevent crossing */
+  right: 0;
+}
+
+.above_split {
+  position: relative; /* Set the element to a relative position */
+  text-align: center;
+  font-family: Arial, Sans-Serif;
+  color: #4C4E4D;
+  font-size: 27px;
+  font-style: italic;
+}
+
+.split_container {
+  display: flex;
+}
+
+.split_left {
+  width: 50%; /* Set the width of the left section */
+  border-right: 1px solid #918F50; /* Add a border in between */
+  padding: 0 10px; /* Add some padding for spacing */
+}
+
+.article1_left {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  align-items: stretch; /* Stretch sections to occupy full width */
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #918F50;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #918F50;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #918F50;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #918F50;
+
+  margin:5px;
+
+  max-width: 600px; /* Set the maximum width */
+  max-height: 250px; /* Set the maximum height */
+}
+
+.article1_left_text {
+  flex: 1; /* Occupy half of the width */
+  border-right-width: 1px;
+  position: relative; /* Set the container as a positioning context */
+  border-right-style: solid;
+  border-right-color: #918F50;
+  
+  max-width: 200px; /* Set the maximum width */
+  max-height: 250px; /* Set the maximum height */
+  padding: 3px;
+}
+
+.article1_left_image {
+  flex: 1; /* Occupy half of the width */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.article1_and_2_container_left {
+  display: flex;
+}
+
+.article2_left {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #918F50;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #918F50;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #918F50;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #918F50;
+
+  margin: 5px;
+
+  max-width: 200px; /* Set the maximum width */
+  max-height: 350px; /* Set the maximum height */
+
+}
+
+.article2_left_text {
+  flex: 1; /* Occupy half of the width */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #918F50;
+  
+}
+
+.article2_left_image {
+  margin-top: 10px;
+  width: 100%; /* Add this line */
+  height: auto; /* Add this line */
+}
+
+.article3_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute items evenly along the vertical axis */
+  height: 100%; /* Ensure the container takes up the full height */
+
+  width: 50%;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #918F50;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #918F50;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #918F50;
+
+  margin: 5px;
+}
+
+.article3_1_left,
+.article3_2_left,
+.article3_3_left {
+  flex: 1; /* Distribute the available space equally among the three items */
+  border-bottom: 1px solid #918F50; /* Add borders for visual separation */
+}
+
+
+
+.split_right {
+  width: 50%; /* Set the width of the right section */
+  padding: 0 10px; /* Add some padding for spacing */
+}
+
+.article1_right {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  flex-direction: column; /* Display the sections in a column layout */
+  justify-content: flex-start; /* Align sections to the top */
+  align-items: stretch; /* Stretch sections to occupy full width */
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #918F50;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #918F50;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #918F50;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #918F50;
+
+  margin:5px;
+}
+
+.article1_and_2_container_right {
+  display: flex;
+}
+
+.article2_right {
+  width: 50%;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #918F50;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #918F50;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #918F50;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #918F50;
+
+  margin: 5px;
+}
+
+.article3_right {
+  width: 50%;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #918F50;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #918F50;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #918F50;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #918F50;
+
+  margin: 5px;
+}
+
+.title {
+  font-family: Arial, Sans-Serif;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-family: "Gill Sans", sans-serif;
+  color: #4C4E4D;
+  font-size: 10px;
+  position: absolute; /* Position the subtitle absolutely */
+  bottom: 5px; /* Adjust the value as needed for desired spacing */
+}
